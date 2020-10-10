@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Header (Navigation), main h1 Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/portfolio_v2.css">
+
+    <title>Nevyana Momchilova</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="nav-logo">
+            <a href="#welcome-section">NEVYANA MOMCHILOVA</a>
+        </div>
+
+        <nav>
+            <label class="hamburger-lines" for="hamburger-checkbox">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </label>
+            <input class="hamburger-checkbox" type="checkbox" id="hamburger-checkbox">
+
+            <ul class="nav-menu">
+                <li><a href="#about-section">ABOUT</a></li>
+                <li><a href="#portfolio-section">PORTFOLIO</a></li>
+                <li><a href="#contact-section">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Welcome Section -->
+        <section class="welcome-section" id="welcome-section">
+            <h1>Hi, I'm Nevyana</h1>
+            <h2>Web Developer</h2>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about-section">
+            <div class="about">
+                <h1>ABOUT</h1>
+                <img src="images/about-pic.jpg" alt="about-pic">
+                <p>My name is Nevyana Momchilova and I am web developer located in Sofia, Bulgaria. 
+                Creative, deeply interested in software development and in love with it from the first "Hello World" program I wrote. I am highly motivated, eager to learn and open for the opportunity to begin my career.</p>
+            </div>
+            <div class="toolkit">
+                <h1>TOOLKIT</h1>
+                <ul class="toolkit-items">
+                    <li>
+                        <img src="images/html.png" alt="html-logo">
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <img src="images/css.png" alt="css-logo">
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <img src="images/sass.png" alt="sass-logo">
+                        <p>SASS</p>
+                    </li>
+                    <li>
+                        <img src="images/javascript.png" alt="javascript-logo">
+                        <p>JavaScript<br>(Basics)</p>
+                    </li>
+                    <li>
+                        <img src="images/bootstrap.png" alt="bootstrap-logo">
+                        <p>Bootstrap4</p>
+                    </li>
+                    <li>
+                        <img src="images/python.png" alt="python-logo">
+                        <p>Python</p>
+                    </li>
+                    <li>
+                        <img src="images/django.png" alt="django-logo">
+                        <p>Django</p>
+                    </li>
+                    <li>
+                        <img src="images/git.png" alt="git-logo">
+                        <p>Git</p>
+                    </li>
+                    <li>
+                        <img src="images/github.png" alt="github-logo">
+                        <p>Github</p>
+                    </li>
+                    <li>
+                        <img src="images/command-line.png" alt="command-line-logo">
+                        <p>Command Line</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" id="portfolio-section">
+            <h1>PORTFOLIO</h1>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-header">
+                        <h2>Website</h2>
+                        <div class="project-buttons">
+                            <a href="">GITHUB</a>
+                            <a class="demo" href="">OPEN DEMO</a>
+                            <a class="close-demo" href="">CLOSE DEMO</a>
+                        </div>
+                    </div>
+                    <p>Responsive website, mobile friendly.</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                        <h2>Portfolio_v2</h2>
+                        <div class="project-buttons">
+                            <a href="">GITHUB</a>
+                            <a href="">OPEN DEMO</a>
+                        </div>
+                    </div>
+                    <p>Responsive portfolio, version 2 - created with Flexbox and Media Queries. You are browsing it now.</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                        <h2>Portfolio_v1</h2>
+                        <div class="project-buttons">
+                            <a href="">GITHUB</a>
+                            <a href="">OPEN DEMO</a>
+                        </div>
+                    </div>
+                    <p>My first portfolio, version 1 - suitable only for desktop/laptop screens. Partialy responsive but not mobile friendly. Done with SASS.</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>SASS</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                        <h2>Photo Blog</h2>
+                        <div class="project-buttons">
+                            <a href="">GITHUB</a>
+                            <a href="">OPEN DEMO</a>
+                        </div>
+                    </div>
+                    <p>Photo Blog with CRUD for the posts, ORM and good practices for the project structure. It also has User registration, Login and Logout functionality.</p>
+                    <ul>
+                        <li>Python</li>
+                        <li>Django</li>
+                        <li>Bootstrap4</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact-section">
+            <h1>GET IN TOUCH</h1>
+            <div class="contact-items">
+                <a href="mailto:nevyana.dm@gmail.com"><img src="images/icons8-email-80.png" alt="icons8-email-80"><p>Send Email</p></a>
+                <a href="https://www.linkedin.com/in/nevyana-momchilova/" target="_blank"><img src="images/icons8-linkedin-80.png" alt="icons8-linkedin-80"><p>Linkedin</p></a>
+                <a href="https://github.com/NevyanaMomchilova" target="_blank"><img src="images/icons8-github-80.png" alt="icons8-github-80"><p>GitHub</p></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>All Rights Reserved &copy; Nevyana Momchilova 2020</p>
+    </footer>
+</body>
+</html>

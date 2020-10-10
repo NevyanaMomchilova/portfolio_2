@@ -1,0 +1,68 @@
+html {
+    font: 16px "Mulish", sans-serif;
+    color: #1b1b1b;
+}
+
+header, h1 {
+    font-family: "Gotu", sans-serif;
+}
+
+body, form, input, button, option, textarea {
+    font: inherit;
+}
+
+section,
+footer {
+    padding: 7rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1em;
+}
+
+.welcome-section h1 {
+    font-size: 4rem;
+    margin-bottom: 0.2em;
+}
+
+h1, h2 {
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.portfolio-section h2 {
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.toolkit p {
+    font-size: 1rem;
+}
+
+.nav-logo a {
+    font-size: 1.14rem;
+}
+
+.nav-menu a {
+    font-size: 0.9rem;
+}
+
+a {
+    color: #1b1b1b;
+}
+
+
+
+
+
+
+
+
