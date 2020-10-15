@@ -1,0 +1,313 @@
+/* MEDIA QUERIES */
+/* 1240px ---------------------------------------------- */
+@media screen and (max-width: 1240px) {
+    /* ABOUT SECTION */
+    /* Images are smaller with 20% */
+    .about img {
+        width: 14rem;
+    }
+
+    .toolkit-items li {
+        height: 7.6em;
+        width: 5.6em;
+    }
+
+    .toolkit-items img {
+        height: 77px;
+        width: 77px;
+    }
+
+
+    /* PORTFOLIO SECTION */
+    /* Projects flex-direction to COLUMN and each project width is bigger (from 45% up to 65%)*/
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 65%;
+    }
+}
+
+
+/* 950px ---------------------------------------------- */
+@media screen and (max-width: 950px) {
+    /* TYPOGRAPHY.CSS -> smaller with 10% */
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    .welcome-section h1 {
+        font-size: 3.6rem;
+        text-shadow: 0.2rem 0.1rem 0.2rem var(--dark-text-color);
+    }
+
+    .welcome-section h2 {
+        text-shadow: 0.1rem 0.1rem 0.12rem var(--dark-text-color);
+    }
+
+    .portfolio-section h1 {
+        text-shadow: 0.1rem 0.1rem 0.15rem var(--dark-text-color);
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .about,
+    .toolkit {
+        width: 100%;
+    }
+
+    .toolkit h1 {
+        margin-top: 3em;
+    }
+
+    /* PORTFOLIO SECTION */
+    .project {
+        width: 75%;
+    }
+}
+
+
+/* 786px ---------------------------------------------- */
+/* Includes Navigation and Hamburger Button for mobile menu */
+@media screen and (max-width: 786px) {
+    /* TYPOGRAPHY.CSS */
+    section,
+    footer {
+        padding: 5rem;
+    }
+    
+    /* smaller with 20% */
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    /* smaller with 40% */
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .welcome-section h1 {
+        font-size: 2.1rem;
+        text-shadow: 0.15rem 0.1rem 0.15rem var(--dark-text-color);
+    }
+
+    .welcome-section h2 {
+        text-shadow: 0.1rem 0.1rem 0.12rem var(--dark-text-color);
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* NAVIGATION */
+    .nav-logo {
+        z-index: 1;
+    }
+
+    .hamburger-lines {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-0, -50%);
+        z-index: 1;
+        cursor: pointer;
+        margin: 0 1rem;
+    }
+
+    .hamburger-lines:hover .hamburger-line{
+        background-color: var(--very-light-ochre-bg-color);
+    }
+
+    .hamburger-line {
+        display: block;
+        width: 1.9rem;
+        height: 0.15rem;
+        background-color: var(--light-ochre-text-color);
+        margin: 0.34rem 0;
+        border-radius: 0.6rem;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    .nav-menu li:nth-of-type(3) {
+        margin: 1rem 0 0 0;
+    }
+
+    .hamburger-checkbox:checked + .nav-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 35vh;
+        width: 100%;
+        background-color: rgba(39,39,39,0.8);
+        padding: 4rem 0 1rem 0;
+    }
+
+
+    /* ABOUT SECTION */
+    /* Images are smaller with 20% */
+    .about img {
+        width: 12rem;
+        box-shadow: 0 0 0.55rem var(--dark-choco-bg-color);
+    }
+
+    .about p {
+        padding: 0 1em;
+    }
+
+    /* PORTFOLIO SECTION */
+    .project {
+        width: 90%;
+    }
+
+    .project-buttons a {
+        margin: 0 0 1.5em 1em;
+        padding: 0.5em;
+        font-size: 1rem;
+    }
+    
+    .project li {
+        font-size: 0.8rem;
+        margin-right: 1em;
+    }
+
+    /* CONTACT SECTION */
+    .contact-items a {
+        /* smaller 50% */
+        margin: 2em;
+        /* smaller 6% */
+        height: 4.7em;
+        width: 6.1em;
+        text-shadow: 0.05rem 0.05rem 0.08rem var(--dark-text-color);
+    }
+
+    /* smaller 12% */
+    .contact-items img {
+        height: 70px;
+        width: 70px;
+    }
+
+    /* FOOTER.CSS */
+    /* smaller 25% */
+    footer p {
+        font-size: 0.89rem;
+    }
+}
+
+
+/* 500px ---------------------------------------------- */
+@media screen and (max-width: 500px) {
+    /* TYPOGRAPHY.CSS */
+    section,
+    footer {
+        padding: 3rem 1rem;
+    }
+    
+    /* smaller with 15% */
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+    
+    .welcome-section h1 {
+        font-size: 1.8rem;
+        text-shadow: 0.1rem 0.1rem 0.1rem var(--dark-text-color);
+    }
+
+    .welcome-section h2 {
+        text-shadow: 0.08rem 0.08rem 0.1rem var(--dark-text-color);
+    }
+
+    .portfolio-section h1 {
+        text-shadow: 0.08rem 0.08rem 0.12rem var(--dark-text-color);
+    }
+    
+    .nav-logo a {
+        font-size: 1rem;
+    }
+
+    /* ABOUT SECTION */
+    /* smaller with 20% */
+    .about img {
+        width: 9.6rem;
+        margin-bottom: 1.6em;
+        box-shadow: 0 0 0.4rem var(--dark-choco-bg-color);
+    }
+
+    /* smaller with 30% */
+    .toolkit-items li {
+        height: 5.3em;
+        width: 3.9em;
+    }
+
+    .toolkit-items img {
+        height: 54px;
+        width: 54px;
+    }
+
+    .toolkit h1 {
+        margin-top: 2.1em;
+    }
+
+    /* smaller with 20% */
+    .toolkit p {
+        font-size: 0.8rem;
+    }
+
+    /* PORTFOLIO SECTION */
+    .project-buttons a {
+        font-size: 0.9rem;
+    }
+    
+    .project li {
+        margin-right: 1em;
+    }
+
+    /* CONTACT SECTION */
+    .contact-items {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-items a {
+        /* smaller 40% */
+        margin: 1.2em;
+    }
+
+    .contact-items img {
+        /* smaller 10% */
+        height: 63px;
+        width: 63px;
+    }
+
+    /* FOOTER.CSS */
+    /* smaller 20% */
+    footer p {
+        font-size: 0.7rem;
+    }
+    
+}

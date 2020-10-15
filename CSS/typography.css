@@ -1,6 +1,17 @@
+/* COLOR VARIABLES */
+:root {
+    --dark-text-color: rgb(27,27,27);
+    --ochre-text-color: rgb(253,203,109);
+    --light-ochre-text-color: rgb(255,215,142);
+    --very-light-ochre-bg-color: rgb(255,232,190);
+    --light-choco-bg-color: rgb(168,117,88);
+    --dark-choco-bg-color: rgb(82,64,54);
+    --dark-bg-color: rgb(39,39,39);
+}
+
 html {
     font: 16px "Mulish", sans-serif;
-    color: #1b1b1b;
+    color: var(--dark-text-color);
 }
 
 header, h1 {
@@ -21,11 +32,6 @@ h1 {
     margin-bottom: 1em;
 }
 
-.welcome-section h1 {
-    font-size: 4rem;
-    margin-bottom: 0.2em;
-}
-
 h1, h2 {
     font-weight: 400;
 }
@@ -34,7 +40,23 @@ h2 {
     font-size: 1.8rem;
 }
 
+.welcome-section h1 {
+    font-size: 4rem;
+    margin-bottom: 0.2em;
+    text-shadow: 0.3rem 0.2rem 0.3rem var(--dark-text-color);
+}
+
+.welcome-section h2 {
+    text-shadow: 0.15rem 0.1rem 0.2rem var(--dark-text-color);
+}
+
+.portfolio-section h1 {
+    color: var(--ochre-text-color);
+    text-shadow: 0.15rem 0.1rem 0.2rem var(--dark-text-color);
+}
+
 .portfolio-section h2 {
+    color: var(--dark-choco-bg-color);
     margin-bottom: 1em;
 }
 
@@ -43,8 +65,19 @@ p {
     font-weight: 300;
 }
 
+.about p,
+.project p {
+    text-align: justify;
+}
+
 .toolkit p {
     font-size: 1rem;
+    text-align: center;
+}
+
+a {
+    color: var(--dark-text-color);
+    cursor: pointer;
 }
 
 .nav-logo a {
@@ -54,11 +87,6 @@ p {
 .nav-menu a {
     font-size: 0.9rem;
 }
-
-a {
-    color: #1b1b1b;
-}
-
 
 
 

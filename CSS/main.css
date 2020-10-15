@@ -1,33 +1,3 @@
-/* 
-Colors
-
-h1, welcome h2, portfolio shadows - #6d6d6d gradient to black
-
-portfolio background - #e4e4e4
-
-new!!
-header and footer background - #272727
-
-h1, h2 - #1b1b1b
-
-header a and hamburger hover - #d3d1ce
-a, project background #faf4f2;
-portfolio section #a87558
-.....
-#a87558
-#bcb7b4
-#6d5242
-#b2a79b
-#958f8b
-#744428
-#e1a55f
-#6a322a
-
-
-
-*/
-
-
 /* WELCOME SECTION */
 .welcome-section {
     display: flex;
@@ -41,15 +11,7 @@ portfolio section #a87558
     background-size: cover;
     background-position: top center;
     padding-top: 55vh;
-    color: #fdcb6d;
-}
-
-.welcome-section h1 {
-    text-shadow: 0.3rem 0.2rem 0.3rem #1b1b1b;
-}
-
-.welcome-section h2 {
-    text-shadow: 0.15rem 0.1rem 0.2rem #1b1b1b;
+    color: var(--ochre-text-color);
 }
 
 
@@ -58,7 +20,7 @@ portfolio section #a87558
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: #ffe8be;
+    background-color: var(--very-light-ochre-bg-color);
 }
 
 .about,
@@ -73,11 +35,7 @@ portfolio section #a87558
     width: 16rem;
     border-radius: 50%;
     margin-bottom: 2em;
-}
-
-.about p,
-.toolkit p {
-    text-align: center;
+    box-shadow: 0 0 0.7rem var(--dark-choco-bg-color);
 }
 
 .toolkit-items {
@@ -91,9 +49,14 @@ portfolio section #a87558
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
-    padding: 0 0.5em 0.5em 0.5em;
+    margin: 0 0.5em 0.5em 0.5em;
     height: 9.5em;
     width: 7em;
+}
+
+.toolkit-items img {
+    height: 96px;
+    width: 96px;
 }
 
 
@@ -103,16 +66,7 @@ portfolio section #a87558
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #a87558;
-}
-
-.portfolio-section h1 {
-    color: #fdcb6d;
-    text-shadow: 0.15rem 0.1rem 0.2rem #1b1b1b;
-}
-
-.portfolio-section h2 {
-    color: #524036;
+    background-color: var(--light-choco-bg-color);
 }
 
 .projects {
@@ -126,13 +80,17 @@ portfolio section #a87558
     position: relative;
     display: flex;
     flex-direction: column;
+    /* background-color: var(--very-light-ochre-bg-color); */
+    background-image: url("../images/pexels-evie-shaffer-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 20rem;
     width: 45%;
-    background-color: #ffe8be;
     padding: 2em; 
     margin: 1em;  
     border-radius: 1em;
-    box-shadow: 0.3rem 0.2rem 1rem #1b1b1b; 
+    box-shadow: 0.3rem 0.2rem 1rem var(--dark-text-color); 
 }
 
 .project-header {
@@ -143,11 +101,17 @@ portfolio section #a87558
 .project-buttons {
     display: flex;
     justify-content: flex-end;
-    
 }
 
 .project-buttons a {
-    margin: 0 0 2em 3em;
+    margin: 0 0 1em 2em;
+    padding: 1em;
+}
+
+.project-buttons a:hover {
+    box-shadow: 0 0 0.5rem var(--dark-choco-bg-color);
+    border-radius: 2em;
+    transform: scale(1.05);
 }
 
 .project p {
@@ -157,23 +121,13 @@ portfolio section #a87558
 .project ul {
     position: absolute;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
     bottom: 2rem;
     left: 2rem;
 }
 
 .project li {
     margin-right: 2em;
-    color: #524036
-}
-
-.close-demo {
-    display: none;
-}
-
-.demo:visited .close-demo {
-    display: block;
+    color: var(--light-choco-bg-color);
 }
 
 
@@ -184,7 +138,7 @@ portfolio section #a87558
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #ffe8be;
+    background-color: var(--very-light-ochre-bg-color);
 }
 
 .contact-items {
@@ -199,19 +153,11 @@ portfolio section #a87558
     justify-content: center;
     align-items: center;
     margin: 4em;
-    height: 80px;
-    width: 100px;
-    text-shadow: 0.05em 0.05em 0.1em #1b1b1b; 
+    height: 5em;
+    width: 6.5em;
+    text-shadow: 0.05rem 0.05rem 0.1rem var(--dark-text-color); 
 }
 
-
-/* FOOTER */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #272727;
-    color: #ffd78e;
+.contact-items a:hover {
+    transform: scale(1.1);
 }
-
-
