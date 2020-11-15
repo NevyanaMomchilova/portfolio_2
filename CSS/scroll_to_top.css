@@ -1,0 +1,21 @@
+.scrollToTop {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    width: 80px;
+    height: 80px;
+    background: url(../images/icons8-slide-up-80.png);
+    background-size: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollToTop.active {
+    visibility: visible;
+    opacity: 1;
+}
