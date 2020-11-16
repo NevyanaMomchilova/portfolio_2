@@ -19,6 +19,7 @@ navMenuLinks.forEach(link => {
     });
 });
 
+
 // SCROLL TO TOP BUTTON
 window.addEventListener("scroll", function() {
     let scroll = document.querySelector(".scrollToTop");

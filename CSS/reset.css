@@ -8,6 +8,10 @@ html, *, *:before, *:after {
     -webkit-box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 li {
     list-style: none;
 }
