@@ -31,10 +31,6 @@
     background-color: var(--very-light-ochre-bg-color);
 }
 
-.about-section h1 {
-    animation: moveToRight 2s;
-}
-
 .about,
 .toolkit {
     display: flex;
