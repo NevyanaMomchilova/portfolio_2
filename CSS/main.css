@@ -57,7 +57,7 @@
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
-    margin: 0 0.5em 0.5em 0.5em;
+    margin: 0 0.5em 3em 0.5em;
     height: 9.5em;
     width: 7em;
 }
@@ -79,31 +79,48 @@
 
 .projects {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .project {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 2.5rem 2.5rem 0 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.02rem solid var(--very-light-ochre-bg-color);
+}
+
+.fourth-project {
+    border: none;
+}
+
+.project-image {
+    width: 45%;
+    height: 100%; 
+    border-radius: 1em;
+    box-shadow: 0.3rem 0.2rem 1rem var(--dark-text-color);
+    margin-bottom: 1rem;
+}
+
+.project-details {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* background-color: var(--very-light-ochre-bg-color); */
-    background-image: url("../images/pexels-evie-shaffer-1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 20rem;
-    width: 45%;
-    padding: 2em; 
-    margin: 1em;  
-    border-radius: 1em;
-    box-shadow: 0.3rem 0.2rem 1rem var(--dark-text-color); 
+    width: 45%; 
+    color: var(--light-ochre-text-color);
+    margin-bottom: 1rem;
 }
 
 .project-header {
     display: flex;
     flex-direction: column-reverse;
+}
+
+.project-header h2 {
+    color: var(--white-color);
 }
 
 .project-buttons {
@@ -114,28 +131,29 @@
 .project-buttons a {
     margin: 0 0 1em 2em;
     padding: 1em;
+    color: var(--very-light-ochre-bg-color);
 }
 
 .project-buttons a:hover {
     box-shadow: 0 0 0.5rem var(--dark-choco-bg-color);
     border-radius: 2em;
     transform: scale(1.05);
+    color: var(--white-color);
 }
 
-.project p {
+.project-details p {
     margin-bottom: 1em;
 }
 
-.project ul {
-    position: absolute;
+.project-details ul {
     display: flex;
-    bottom: 2rem;
-    left: 2rem;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.project li {
+.project-details li {
     margin-right: 2em;
-    color: var(--light-choco-bg-color);
+    color: var(--very-light-ochre-bg-color);
 }
 
 
